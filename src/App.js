@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let list = ["thing1", "thing2", "thing3"];
+  let templateList = list.map(item => `<li>${item}</li>`)
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -19,7 +21,10 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <div>
     <h1>Greetings Globe</h1>
+    {/* render template list */}
+    </div>
   );
 }
 
